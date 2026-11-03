@@ -50,6 +50,7 @@
         .gold-btn:hover {
             background-color: #e6ca65;
             transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
         }
         
         .solid-bg {
@@ -219,7 +220,7 @@
                     <i class="fa-solid fa-building-columns"></i>
                 </div>
                 <p class="text-sm text-amber-50/80 leading-relaxed">
-                    Той салтанаты Шымкент қаласындағы Aisulu Event Hall ресторонында өтеді. Мекенжайды 2ГИС картасы арқылы ашу үшін төмендегі батырманы басыңыз:
+                    Той салтанаты Шымкент қаласындағы Aisulu Event Hall ресторанында өтеді. Мекенжайды 2ГИС картасы арқылы ашу үшін төмендегі батырманы басыңыз:
                 </p>
 
                 <div class="pt-2">
@@ -233,24 +234,26 @@
         </div>
     </section>
 
-    <!-- RSVP Form Section (Google Forms Embedded) -->
+    <!-- RSVP Button Section (Redirect to Google Forms) -->
     <section id="rsvp" class="py-20 px-4 relative z-10">
-        <div class="max-w-2xl mx-auto">
-            <div class="text-center space-y-3 mb-8">
-                <span class="text-xs uppercase tracking-[0.3em] text-gold-400">Қонақтар сауалнамасы</span>
-                <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text">Келуіңізді растаңыз</h3>
-                <p class="text-xs text-amber-100/70 max-w-md mx-auto leading-relaxed">
-                    Ресторандағы орын санын нақтылау үшін төмендегі сауалнаманы толтыруыңызды сұраймыз
+        <div class="max-w-xl mx-auto text-center">
+            <div class="ornament-card p-8 sm:p-10 rounded-2xl space-y-6">
+                <div class="space-y-2">
+                    <span class="text-xs uppercase tracking-[0.3em] text-gold-400">Қонақтар сауалнамасы</span>
+                    <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text">Келуіңізді растаңыз</h3>
+                </div>
+                <p class="text-xs sm:text-sm text-amber-100/70 max-w-md mx-auto leading-relaxed">
+                    Ресторандағы орын санын нақтылау үшін төмендегі батырманы басып, сауалнаманы толтыруыңызды сұраймыз:
                 </p>
-            </div>
-
-            <!-- Embedded Google Form -->
-            <div class="ornament-card p-2 sm:p-4 rounded-2xl overflow-hidden shadow-xl">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSN6sB39vUx8pVsp4sHemP2vOuZeDSKwktz3rgmyWHW6S31A/viewform?embedded=true" 
-                        class="w-full h-[850px] sm:h-[800px] border-0 rounded-xl" 
-                        frameborder="0" 
-                        marginheight="0" 
-                        marginwidth="0">Загрузка…</iframe>
+                <div class="pt-4">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSN6sB39vUx8pVsp4sHemP2vOuZeDSKwktz3rgmyWHW6S31A/viewform" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 rounded-xl gold-btn font-bold text-sm tracking-wide shadow-lg transition transform hover:scale-105">
+                        <i class="fa-regular fa-paper-plane text-lg"></i>
+                        ✦ ТАПСЫРЫСТЫ РАСТАУ (ЖАУАП БЕРУ) ✦
+                    </a>
+                </div>
             </div>
         </div>
     </section>
