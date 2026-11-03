@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рақымжан & Хақназар - Сүндет Тойға Шақыру</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            800: '#064e3b',
+                            900: '#022c22',
+                            950: '#011c16',
+                        },
+                        gold: {
+                            300: '#fde047',
+                            400: '#eab308',
+                            500: '#d97706',
+                            600: '#b45309',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gold-text {
+            background: linear-gradient(135deg, #d4af37 0%, #fff3a8 25%, #aa771c 50%, #fcf6ba 75%, #a2790d 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #bf953f 0%, #fcf6ba 50%, #aa771c 100%);
+            color: #011c16;
+            transition: all 0.3s ease;
+        }
+        .gold-btn:hover {
+            opacity: 0.95;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+        
+        /* Solid Dark Emerald Background (No patterns or figures) */
+        .solid-emerald-bg {
+            background-color: #022c22;
+        }
+
+        /* Clean Card Styling without Decorative Icons */
+        .ornament-card {
+            position: relative;
+            background-color: #064e3b;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="solid-emerald-bg text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gold-500 selection:text-emerald-950">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#1b3b2b]/90 backdrop-blur-md border-b border-gold-500/20 px-4 py-3">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="text-gold-400 font-serif text-lg font-bold tracking-wider">
+                Рақымжан & Хақназар
+            </div>
+            <div class="space-x-3 sm:space-x-4 text-xs sm:text-sm font-medium tracking-wider">
+                <a href="#about" class="hover:text-gold-400 transition">Той Туралы</a>
+                <a href="#program" class="hover:text-gold-400 transition">Бағдарлама</a>
+                <a href="#location" class="hover:text-gold-400 transition">Мекенжай</a>
+                <a href="#rsvp" class="px-3 py-1.5 rounded bg-gold-500/20 border border-gold-500/50 text-gold-300 hover:bg-gold-500 hover:text-emerald-950 transition">Растау</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-4 text-center z-10">
+        <div class="max-w-3xl mx-auto space-y-6">
+
+            <!-- Header Badge -->
+            <div class="inline-block px-4 py-1.5 rounded-full border border-gold-500/40 bg-emerald-900">
+                <span class="text-gold-300 text-xs sm:text-sm tracking-widest uppercase font-medium">Сүндет Тойға Шақыру</span>
+            </div>
+
+            <!-- Main Title -->
+            <div class="py-2">
+                <h2 class="text-xs sm:text-sm uppercase tracking-[0.3em] text-gold-400 mb-2">Ұлдарымыз</h2>
+                <h1 class="font-serif text-5xl sm:text-7xl font-bold gold-text tracking-wide leading-tight drop-shadow-md">
+                    Рақымжан<br><span class="text-3xl sm:text-4xl text-amber-100">&</span><br>Хақназар
+                </h1>
+                <p class="text-xs uppercase tracking-[0.4em] text-amber-200/80 mt-4">Сүндет тойына ортақтасыңыздар!</p>
+            </div>
+
+            <!-- Simple Gold Line Divider -->
+            <div class="w-32 h-0.5 mx-auto bg-gold-500/60"></div>
+
+            <!-- Invitation Text -->
+            <p class="text-sm sm:text-base text-slate-200 max-w-xl mx-auto leading-relaxed font-light px-2">
+                Құрметті ағайын-туыс, бауырлар мен достар! Ақ тілекпен өсіріп отырған ұлдарымыздың азамат болу жолындағы алғашқы үлкен қуанышы – сүндет тойына арналған салтанатты дастарханымыздың қадірлі қонағы болуға шақырамыз!
+            </p>
+
+            <!-- Date Display -->
+            <div class="pt-2">
+                <div class="inline-flex items-center gap-3 sm:gap-4 px-6 py-3 rounded-2xl ornament-card text-gold-300 font-serif text-base sm:text-xl">
+                    <i class="fa-regular fa-calendar-check text-gold-400"></i>
+                    <span>5 Қараша, 2026 жыл</span>
+                    <span class="text-gold-500/50">|</span>
+                    <i class="fa-regular fa-clock text-gold-400"></i>
+                    <span>19:00</span>
+                </div>
+            </div>
+
+            <!-- Scroll Down Indicator -->
+            <div class="pt-6 animate-bounce">
+                <a href="#countdown-section" class="text-gold-400/60 hover:text-gold-400 text-2xl transition">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer Section -->
+    <section id="countdown-section" class="py-16 px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+            <h3 class="font-serif text-2xl sm:text-3xl font-semibold gold-text">Тойға дейін қалған уақыт:</h3>
+            
+            <div id="countdown" class="grid grid-cols-4 gap-2 sm:gap-4 max-w-lg mx-auto">
+                <div class="ornament-card rounded-xl p-3 sm:p-4 text-center">
+                    <span id="days" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300">00</span>
+                    <span class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-widest">Күн</span>
+                </div>
+                <div class="ornament-card rounded-xl p-3 sm:p-4 text-center">
+                    <span id="hours" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300">00</span>
+                    <span class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-widest">Сағат</span>
+                </div>
+                <div class="ornament-card rounded-xl p-3 sm:p-4 text-center">
+                    <span id="minutes" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300">00</span>
+                    <span class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-widest">Минут</span>
+                </div>
+                <div class="ornament-card rounded-xl p-3 sm:p-4 text-center">
+                    <span id="seconds" class="block font-serif text-2xl sm:text-4xl font-bold text-gold-300">00</span>
+                    <span class="text-[10px] sm:text-xs text-slate-300 uppercase tracking-widest">Секунд</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Schedule Section -->
+    <section id="program" class="py-20 px-4 relative z-10">
+        <div class="max-w-3xl mx-auto text-center space-y-12">
+            <div class="space-y-2">
+                <span class="text-xs uppercase tracking-[0.3em] text-gold-400">Той реті</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text">Той Бағдарламасы</h3>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative border-l border-gold-500/40 max-w-md mx-auto space-y-8 text-left pl-6">
+                
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-400 border-4 border-emerald-950"></div>
+                    <span class="text-xs font-semibold text-gold-400 tracking-wider">19:00</span>
+                    <h4 class="font-serif text-lg font-bold text-slate-100">Қонақтардың жиналуы</h4>
+                    <p class="text-xs text-slate-300">Қонақтарды қарсы алу, естелік суретке түсу</p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-400 border-4 border-emerald-950"></div>
+                    <span class="text-xs font-semibold text-gold-400 tracking-wider">19:30</span>
+                    <h4 class="font-serif text-lg font-bold text-slate-100">Батырларды ортаға шығару & Ақ бата</h4>
+                    <p class="text-xs text-slate-300">Рақымжан мен Хақназарды салтанатты қарсы алу және бата беру</p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-400 border-4 border-emerald-950"></div>
+                    <span class="text-xs font-semibold text-gold-400 tracking-wider">20:00</span>
+                    <h4 class="font-serif text-lg font-bold text-slate-100">Салтанатты ашылу & Тілектер кезегі</h4>
+                    <p class="text-xs text-slate-300">Үлкендердің батасы, туған-туыстардың арнау тілектері</p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-400 border-4 border-emerald-950"></div>
+                    <span class="text-xs font-semibold text-gold-400 tracking-wider">21:00</span>
+                    <h4 class="font-serif text-lg font-bold text-slate-100">Сыйлықтарды табыстау / Ойындар</h4>
+                    <p class="text-xs text-slate-300">Мерекелік ойындар мен арнайы сыйлықтар беру</p>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-400 border-4 border-emerald-950"></div>
+                    <span class="text-xs font-semibold text-gold-400 tracking-wider">22:00</span>
+                    <h4 class="font-serif text-lg font-bold text-slate-100">Қорытынды & Естелік суреттерге түсу</h4>
+                    <p class="text-xs text-slate-300">Той иелерінің алғыс сөзі мен естелік суретке түсу</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section (2GIS only) -->
+    <section id="location" class="py-20 px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="space-y-2">
+                <span class="text-xs uppercase tracking-[0.3em] text-gold-400">Өтетін мекенжайы</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text">Aisulu Event Hall</h3>
+                <p class="text-slate-200 text-sm sm:text-base"><i class="fa-solid fa-location-dot text-gold-400 mr-2"></i>Шымкент қаласы</p>
+            </div>
+
+            <!-- 2GIS Card Container -->
+            <div class="ornament-card rounded-2xl p-6 sm:p-8 max-w-xl mx-auto space-y-6">
+                <div class="w-16 h-16 rounded-full bg-gold-500/10 border border-gold-500/40 flex items-center justify-center mx-auto text-gold-400 text-2xl">
+                    <i class="fa-solid fa-building-columns"></i>
+                </div>
+                <p class="text-sm text-slate-200 leading-relaxed">
+                    Той салтанаты Шымкент қаласындағы Aisulu Event Hall ресторанында өтеді. Мекенжайды 2ГИС картасы арқылы ашу үшін төмендегі батырманы басыңыз:
+                </p>
+
+                <!-- 2GIS Navigation Button -->
+                <div class="pt-2">
+                    <a href="https://go.2gis.com/ONm2z" target="_blank" rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 rounded-xl gold-btn font-bold text-sm tracking-wide shadow-xl transition transform hover:scale-105">
+                        <i class="fa-solid fa-map-location-dot text-emerald-950 text-lg"></i>
+                        2ГИС арқылы картаны ашу
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Form Section -->
+    <section id="rsvp" class="py-20 px-4 relative z-10">
+        <div class="max-w-xl mx-auto">
+            <div class="text-center space-y-3 mb-10">
+                <span class="text-xs uppercase tracking-[0.3em] text-gold-400">Қонақтар сауалнамасы</span>
+                <h3 class="font-serif text-3xl sm:text-4xl font-bold gold-text">Келуіңізді растаңыз</h3>
+                <p class="text-xs text-slate-300 max-w-md mx-auto leading-relaxed">
+                    Ресторандағы орын санын нақтылау үшін төмендегі форманы толтыруыңызды сұраймыз
+                </p>
+            </div>
+
+            <!-- Form Card -->
+            <form id="rsvpForm" onsubmit="handleFormSubmit(event)" class="ornament-card p-6 sm:p-8 rounded-2xl space-y-6">
+                <!-- Name Field -->
+                <div class="space-y-2">
+                    <label for="fullName" class="block text-xs uppercase tracking-wider text-gold-300">Толық аты-жөніңіз *</label>
+                    <input type="text" id="fullName" required placeholder="Мысалы: Ерлан Әлібеков" 
+                           class="w-full px-4 py-3 rounded-lg bg-emerald-950/80 border border-gold-500/40 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold-400 text-sm transition">
+                </div>
+
+                <!-- Attendance Status -->
+                <div class="space-y-2">
+                    <label class="block text-xs uppercase tracking-wider text-gold-300">Тойға қатыса аласыз ба? *</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label class="flex items-center gap-3 p-3 rounded-lg bg-emerald-950/60 border border-gold-500/30 cursor-pointer hover:border-gold-400/60 transition">
+                            <input type="radio" name="attendance" value="Келеді" checked onchange="toggleGuestSelect(true)" class="accent-gold-500">
+                            <span class="text-sm text-slate-200">Иә, қуанышпен қатысамын</span>
+                        </label>
+                        <label class="flex items-center gap-3 p-3 rounded-lg bg-emerald-950/60 border border-gold-500/30 cursor-pointer hover:border-gold-400/60 transition">
+                            <input type="radio" name="attendance" value="Келе алмайды" onchange="toggleGuestSelect(false)" class="accent-gold-500">
+                            <span class="text-sm text-slate-200">Өкінішке орай, келе алмаймын</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Guest Count -->
+                <div class="space-y-2" id="guestCountBox">
+                    <label for="guestCount" class="block text-xs uppercase tracking-wider text-gold-300">Өзіңізбен бірге қанша адам болады? *</label>
+                    <select id="guestCount" class="w-full px-4 py-3 rounded-lg bg-emerald-950/80 border border-gold-500/40 text-slate-100 focus:outline-none focus:border-gold-400 text-sm transition">
+                        <option value="1" class="bg-emerald-950">1 адам (Тек өзім)</option>
+                        <option value="2" selected class="bg-emerald-950">2 адам (Жұбайыммен/Серігіммен)</option>
+                        <option value="3" class="bg-emerald-950">3 адам</option>
+                        <option value="4" class="bg-emerald-950">4+ адам (Отбасымызбен)</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="w-full py-3.5 rounded-lg gold-btn font-semibold text-sm tracking-widest uppercase shadow-lg">
+                    Жауапты Жіберу
+                </button>
+            </form>
+
+            <!-- Local Submissions Counter & View List Button -->
+            <div class="mt-8 text-center space-y-3">
+                <button onclick="toggleGuestListModal()" class="px-4 py-2 rounded-lg bg-emerald-900/60 border border-gold-500/30 text-xs text-gold-300 hover:bg-gold-500 hover:text-emerald-950 transition">
+                    <i class="fa-solid fa-list-check mr-1"></i> Жиналған жауаптар тізімі (<span id="submissionCount">0</span>)
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-gold-500/10 text-xs text-slate-400 relative z-10">
+        <p class="font-serif gold-text text-base mb-1">Рақымжан & Хақназар</p>
+        <p>© 2026 Сүндет Той. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-emerald-950/80 backdrop-blur-sm hidden">
+        <div class="ornament-card p-6 sm:p-8 max-w-sm w-full text-center space-y-4 shadow-2xl rounded-2xl">
+            <div class="w-12 h-12 rounded-full bg-gold-500/20 border border-gold-400 text-gold-300 flex items-center justify-center mx-auto text-xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h4 class="font-serif text-2xl font-bold gold-text">Үлкен Рахмет!</h4>
+            <p id="modalMessage" class="text-sm text-slate-200">Сіздің жауабыңыз сәтті қабылданды.</p>
+            <button onclick="closeConfirmModal()" class="w-full py-2.5 rounded-lg gold-btn font-medium text-xs tracking-wider uppercase">
+                Жабу
+            </button>
+        </div>
+    </div>
+
+    <!-- Admin/Guest List View Modal -->
+    <div id="guestListModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-emerald-950/90 backdrop-blur-sm hidden">
+        <div class="ornament-card p-6 max-w-lg w-full space-y-4 shadow-2xl max-h-[85vh] flex flex-col rounded-2xl">
+            <div class="flex justify-between items-center border-b border-gold-500/30 pb-3">
+                <h4 class="font-serif text-xl font-bold gold-text">Қонақтар жауабы</h4>
+                <button onclick="toggleGuestListModal()" class="text-slate-400 hover:text-white text-lg">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Summary Stats -->
+            <div id="summaryStats" class="grid grid-cols-3 gap-2 text-center text-xs py-2.5 bg-emerald-950/80 rounded-lg border border-gold-500/20">
+                <div>
+                    <span class="block text-slate-400">Келеді:</span>
+                    <span id="statAttending" class="font-bold text-green-400">0</span>
+                </div>
+                <div>
+                    <span class="block text-slate-400">Келе алмайды:</span>
+                    <span id="statDeclined" class="font-bold text-red-400">0</span>
+                </div>
+                <div>
+                    <span class="block text-slate-400">Жалпы адам:</span>
+                    <span id="statTotalGuests" class="font-bold text-gold-300">0</span>
+                </div>
+            </div>
+
+            <!-- Guest List Container -->
+            <div id="guestListContainer" class="overflow-y-auto space-y-2 flex-1 pr-1 text-sm">
+                <!-- Dynamic Guest Items -->
+            </div>
+
+            <div class="pt-2 flex justify-between items-center border-t border-gold-500/20">
+                <button onclick="clearGuestData()" class="text-xs text-red-400 hover:underline">Тізімді тазалау</button>
+                <button onclick="toggleGuestListModal()" class="px-4 py-1.5 rounded bg-gold-500/20 text-gold-300 text-xs">Жабу</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Target Date: Nov 5, 2026 19:00:00
+        const targetDate = new Date('2026-11-05T19:00:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = targetDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+            } else {
+                document.getElementById('countdown').innerHTML = "<div class='text-gold-300 font-serif text-2xl col-span-4'>Той басталды!</div>";
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        function toggleGuestSelect(isAttending) {
+            const box = document.getElementById('guestCountBox');
+            if (isAttending) {
+                box.classList.remove('hidden');
+            } else {
+                box.classList.add('hidden');
+            }
+        }
+
+        function getStoredRSVP() {
+            return JSON.parse(localStorage.getItem('toy_rsvp_responses') || '[]');
+        }
+
+        function updateCountDisplay() {
+            const data = getStoredRSVP();
+            document.getElementById('submissionCount').innerText = data.length;
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('fullName').value.trim();
+            const attendance = document.querySelector('input[name="attendance"]:checked').value;
+            const count = attendance === 'Келеді' ? parseInt(document.getElementById('guestCount').value) : 0;
+
+            const newEntry = {
+                id: Date.now(),
+                name: name,
+                attendance: attendance,
+                count: count,
+                date: new Date().toLocaleDateString('kk-KZ')
+            };
+
+            const list = getStoredRSVP();
+            list.push(newEntry);
+            localStorage.setItem('toy_rsvp_responses', JSON.stringify(list));
+
+            // Show Modal
+            const modalMsg = document.getElementById('modalMessage');
+            if (attendance === 'Келеді') {
+                modalMsg.innerText = `Құрметті ${name}! Тойға келуіңізді растағаныңызға рахмет (${count} адам). Сізді асыға күтеміз!`;
+            } else {
+                modalMsg.innerText = `Құрметті ${name}! Хабарласып, жауап бергеніңізге рахмет. Ақ тілегіңізге алғыс білдіреміз!`;
+            }
+
+            document.getElementById('confirmModal').classList.remove('hidden');
+            document.getElementById('rsvpForm').reset();
+            toggleGuestSelect(true);
+            updateCountDisplay();
+        }
+
+        function closeConfirmModal() {
+            document.getElementById('confirmModal').classList.add('hidden');
+        }
+
+        function toggleGuestListModal() {
+            const modal = document.getElementById('guestListModal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                renderGuestList();
+            }
+        }
+
+        function renderGuestList() {
+            const container = document.getElementById('guestListContainer');
+            const data = getStoredRSVP();
+
+            let attendingCount = 0;
+            let declinedCount = 0;
+            let totalGuests = 0;
+
+            data.forEach(item => {
+                if (item.attendance === 'Келеді') {
+                    attendingCount++;
+                    totalGuests += item.count;
+                } else {
+                    declinedCount++;
+                }
+            });
+
+            document.getElementById('statAttending').innerText = attendingCount;
+            document.getElementById('statDeclined').innerText = declinedCount;
+            document.getElementById('statTotalGuests').innerText = totalGuests;
+
+            if (data.length === 0) {
+                container.innerHTML = `<p class="text-slate-400 text-center py-6">Әлі ешқандай жауап тіркелген жоқ.</p>`;
+                return;
+            }
+
+            container.innerHTML = data.map(item => `
+                <div class="p-3 rounded-lg bg-emerald-950/80 border border-gold-500/20 flex justify-between items-center">
+                    <div>
+                        <p class="font-medium text-slate-200">${item.name}</p>
+                        <p class="text-xs ${item.attendance === 'Келеді' ? 'text-green-400' : 'text-red-400'}">
+                            ${item.attendance === 'Келеді' ? `Келеді (${item.count} адам)` : 'Келе алмайды'}
+                        </p>
+                    </div>
+                    <span class="text-[10px] text-gold-400/60">${item.date}</span>
+                </div>
+            `).join('');
+        }
+
+        function clearGuestData() {
+            if (confirm('Бүкіл сақталған тізімді өшіргіңіз келе ме?')) {
+                localStorage.removeItem('toy_rsvp_responses');
+                renderGuestList();
+                updateCountDisplay();
+            }
+        }
+
+        window.onload = function() {
+            updateCountDisplay();
+        };
+    </script>
+</body>
+</html>
